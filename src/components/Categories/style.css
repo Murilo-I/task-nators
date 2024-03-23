@@ -1,0 +1,28 @@
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.categories-list {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.category-item {
+    background-color: var(--secundaria);
+    display: inline-block;
+    padding: .3rem;
+    border-radius: .5rem;
+    color: white;
+    margin-top: 1.2rem;
+}
+
+.category-input {
+    border-style: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    margin-top: 1.2rem;
+}
