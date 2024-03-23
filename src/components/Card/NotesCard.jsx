@@ -3,9 +3,21 @@ import "./style.css";
 
 class NotesCard extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      taskDone: false
+    };
+  }
+
   delete() {
     const index = this.props.index;
     this.props.deleteCard(index);
+  }
+
+  ballotCheck() {
+    const checked = this.state.taskDone;
+    this.setState({ taskDone: !checked });
   }
 
   render() {
@@ -18,6 +30,11 @@ class NotesCard extends Component {
             class="fas fa-trash-alt"
             style={{ cursor: "pointer" }}
             onClick={this.delete.bind(this)}
+          ></i>
+          <i
+            className={this.state.taskDone ? "fas fa-check-double" : "fas fa-check"}
+            style={{ cursor: "pointer" }}
+            onClick={this.ballotCheck.bind(this)}
           ></i>
         </header>
         <p className="notes-card-text">{this.props.text}</p>

@@ -17,12 +17,13 @@
     padding: .3rem;
     border-radius: .5rem;
     color: white;
-    margin-top: 1.2rem;
+    margin: 1.2rem .5rem 0;
 }
 
 .category-input {
     border-style: none;
     border-radius: .5rem;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-    margin-top: 1.2rem;
+    margin: 1.2rem .5rem 0;
+    padding: .3rem;
 }
